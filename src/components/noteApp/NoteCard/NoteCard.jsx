@@ -1,14 +1,13 @@
 import React, { Component } from "react";
+import { Card, Note, Title } from "./style";
 
 export default class NoteCard extends Component{
     render(){
         return(
-            <section>
-            <header>
-                <h3>Title</h3>
-            </header>
-            <p>Your Note</p>
-        </section>
+            <Card>
+            <Title>Title</Title>
+            <Note>Your Note</Note>
+        </Card>
         )
 
     }
