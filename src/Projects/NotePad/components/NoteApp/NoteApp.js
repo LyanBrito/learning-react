@@ -4,17 +4,33 @@ import NoteForm from "../NoteForm/NoteForm";
 import NoteList from "../NoteList/NoteList";
 
 class NoteApp extends Component {
-  newNote(title, note){
-    console.log('Nota adicionada:', title, note)
+  constructor() {
+    super();
 
+    this.state = {
+      notes:[]
+
+    }
   }
+  createNote(title, note) {
+    const newNote = {title, note};
+    const newNoteArray = [...this.state.notes,newNote]
+    const newState = {
+      notes:newNoteArray
+}
+    this.setState(newState)
 
-   render() {
+
+    console.log('Nota adicionada:', title, note)
+  }
+  
+  render() {
+    
     return (
       <section className="body">
-  
-        <NoteForm newNote={this.newNote} />
-        <NoteList />
+
+        <NoteForm createNote={this.createNote.bind(this)} />
+        <NoteList notes={this.state.notes} />
       </section>
     );
   }
