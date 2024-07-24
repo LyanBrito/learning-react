@@ -31,11 +31,13 @@ export default class NoteForm extends Component {
                 <h1>Write a note!</h1>
                 <FormInput
                     type="text"
+                    required
                     placeholder="Title"
                     id="title"
                     onChange={this._handleTitleChange.bind(this)} />
                 <FormTArea
                     rows={15}
+                    required
                     placeholder="Your Note"
                     id="note"
                     onChange={this._handleTextChange.bind(this)} />
