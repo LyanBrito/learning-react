@@ -1,6 +1,7 @@
 # Learning React
 
-This project was created to better understand and learn about React.
+On the way to learning a new language I discovered React. To delve deeper into this language, I decided to test myself and create this repository, which is a library of react projects for individual study.
+I will share with you all my journey through my projects.
 
 ## Available Scripts
 
