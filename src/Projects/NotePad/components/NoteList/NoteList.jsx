@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import NoteCard from "../NoteCard/NoteCard";
-// import { List } from "../NoteCard/style";
 import { ListConteiner } from "./style";
+import NoteCard from "../NoteCard/NoteCard";
 
 export default class NoteList extends Component {
     render() {
