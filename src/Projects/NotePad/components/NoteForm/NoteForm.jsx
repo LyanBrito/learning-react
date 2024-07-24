@@ -19,7 +19,7 @@ export default class NoteForm extends Component {
     _newNote(e) {
         e.preventDefault();
         e.stopPropagation()
-        this.props.newNote(this.title, this.note)
+        this.props.createNote(this.title, this.note)
      
 
     }
