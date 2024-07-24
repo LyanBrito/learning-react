@@ -1,16 +1,24 @@
-import React from "react";
+import React, { Component } from "react";
 import NoteList from "./components/noteApp/NoteList/NoteList";
 import "./App.css"
-import NoteForm from "./components/noteApp/NoteFrom/NoteForm";
+import NoteForm from "./components/noteApp/NoteForm/NoteForm";
+class App extends Component {
+  newNote(title, note){
+    console.log('Nota adicionada:', title, note)
 
-function App() {
-  return (
-    <section className="body">
+  }
 
-      <NoteForm />
-      <NoteList />
-    </section>
-  );
+   render() {
+    return (
+      <section className="body">
+  
+        <NoteForm newNote={this.newNote} />
+        <NoteList />
+      </section>
+    );
+  }
 }
+
+
 
 export default App;
