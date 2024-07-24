@@ -10,13 +10,14 @@ export const Card = styled.section`
     border : 1px solid lightslategray;
     padding: 16px;
     `
-export const Title = styled.text`
+export const TitleNote = styled.text`
     background-color: aliceblue;
     text-align: center;
+    font-weight: 700;
     
 
 `
-export const Note = styled.text`
+export const TextNote = styled.text`
     background-color: aliceblue;
     
 

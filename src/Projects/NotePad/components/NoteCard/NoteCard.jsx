@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Card, Note, Title } from "./style";
+import { Card, TextNote, TitleNote } from "./style";
 
 export default class NoteCard extends Component{
     render(){
         return(
             <Card>
-            <Title>Title</Title>
-            <Note>Your Note</Note>
+            <TitleNote>{this.props.title}</TitleNote>
+            <TextNote>{this.props.note}</TextNote>
         </Card>
         )
 
