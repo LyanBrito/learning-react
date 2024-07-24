@@ -7,10 +7,12 @@ export default class NoteList extends Component {
         return (
             <ListConteiner>
               
-                {Array.of("Trabalho", "Escola", "Pessoal", "penis").map((categoria, index) => {
+                {this.props.notes.map((note, index) => {
                     return (
-                       
-                            <NoteCard />
+                       <div key={index}>
+
+                            <NoteCard title={note.title} note={note.note}/>
+                       </div>
 
                         // <List key={index}>
 
