@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./NoteApp.css"
-import NoteForm from "../NoteForm/NoteForm";
-import NoteList from "../NoteList/NoteList";
+import NoteForm from "../components/NoteForm/NoteForm";
+import NoteList from "../components/NoteList/NoteList";
 
 class NoteApp extends Component {
   constructor() {
