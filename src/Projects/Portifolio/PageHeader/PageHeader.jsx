@@ -17,16 +17,16 @@ export default class PageHeaderv extends Component {
         <div id="menu">
           <HeaderNav>
             <NavWrapper>
-            <NavAnchors href="http://" target="_blank" rel="noopener noreferrer">
+            <NavAnchors href="http://" rel="noopener noreferrer">
               About Me
             </NavAnchors>
-            <NavAnchors href="http://" target="_blank" rel="noopener noreferrer">
+            <NavAnchors href="http://" rel="noopener noreferrer">
               Skills
             </NavAnchors>
-            <NavAnchors href="http://" target="_blank" rel="noopener noreferrer">
+            <NavAnchors href="http://" rel="noopener noreferrer">
               Projects
             </NavAnchors>
-            <NavAnchors href="http://" target="_blank" rel="noopener noreferrer">
+            <NavAnchors href="http://" rel="noopener noreferrer">
               Contact Me
             </NavAnchors>
             </NavWrapper>
